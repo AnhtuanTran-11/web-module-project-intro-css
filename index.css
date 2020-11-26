@@ -2,7 +2,7 @@
 
 /* Changes all elements to selected font */
 * {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 /* Centers container for image */
