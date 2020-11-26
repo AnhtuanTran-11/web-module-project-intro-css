@@ -2,7 +2,7 @@
 
 /* Changes all elements to selected font */
 * {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 /* Centers container for image */
@@ -24,7 +24,7 @@
 
 /* Styles the page titles font */
 #container #imageContainer #headerText .title {
-  font-family: 'Chelsea Market', cursive;
+  font-family: "Chelsea Market", cursive;
   font-size: 70px;
   text-align: center;
 }
