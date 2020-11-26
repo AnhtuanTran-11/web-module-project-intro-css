@@ -24,7 +24,7 @@
 
 /* Styles the page titles font */
 #container #imageContainer #headerText .title {
-  font-family: fantasy;
+  font-family: 'Chelsea Market', cursive;
   font-size: 70px;
   text-align: center;
 }
@@ -72,7 +72,6 @@
 /* Styles the top nav to be centered and flexed */
 #container #topNav .navBar {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -138,6 +137,13 @@
 #container #bottomNav .navBar a {
   text-align: center;
   text-decoration: none;
+}
+
+/* Changes the background-color of the bottom nav */
+#bottomNav {
+  background-color: #f9e7dd;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Resizes the fire image */
