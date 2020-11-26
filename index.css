@@ -1,48 +1,180 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* CSS Styles */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+/* Changes all elements to selected font */
+* {
+  font-family: "Courier New", Courier, monospace;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+/* Centers container for image */
+#container #imageContainer {
+  display: flex;
+  justify-content: center;
 }
-body {
-	line-height: 1;
+
+/* Styles the header image to be rounded */
+#headerImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  margin: 50px auto;
 }
-ol, ul {
-	list-style: none;
+
+/* Styles the page titles font */
+#container #imageContainer #headerText .title {
+  font-family: fantasy;
+  font-size: 70px;
+  text-align: center;
 }
-blockquote, q {
-	quotes: none;
+
+/* Styles the header text to be centered and flexed */
+#container #imageContainer #headerText p {
+  justify-content: center;
+  font-size: 25px;
+  text-align: center;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+/* Wraps the image container when screen width is smaller than 1163px */
+@media screen and (max-width: 1163px) {
+  #container #imageContainer {
+    flex-wrap: wrap;
+  }
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+/* Styles the 2nd child element that is a p element */
+#container #imageContainer #headerText p:nth-child(2) {
+  text-align: center;
+}
+
+/* Styles the 3rd child element that is a p element */
+#container #imageContainer #headerText p:nth-child(3) {
+  text-align: center;
+}
+
+/* Styles container for the about section */
+#container #about {
+  background-color: #ddb9a3;
+  margin: 75px auto;
+  width: 95%;
+  font-size: 25px;
+}
+
+/* Styles p elements in the about section */
+#container #about p {
+  display: inline-block;
+  color: white;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Styles the top nav to be centered and flexed */
+#container #topNav .navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Styles the bottom nav to be centered and flexed */
+#container #bottomNav .navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Sets size and shape of top and bottom nav buttons */
+.button {
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 20px;
+  max-width: 200px;
+  border: none;
+}
+
+/* Colors the top nav buttons */
+#container #topNav .navBar .button {
+  background-color: #ff764e;
+}
+
+#container #topNav .navBar .button:nth-child(2) {
+  background-color: #5ed3eb;
+}
+
+#container #topNav .navBar .button:nth-child(3) {
+  background-color: #ffcd69;
+}
+
+#container #topNav .navBar .button a {
+  color: white;
+}
+
+/* Colors the bottom nav buttons */
+#container #bottomNav .navBar .button {
+  background-color: #ff764e;
+}
+
+#container #bottomNav .navBar .button:nth-child(2) {
+  background-color: #5ed3eb;
+}
+
+#container #bottomNav .navBar .button:nth-child(3) {
+  background-color: #ffcd69;
+}
+
+#container #bottomNav .navBar .button a {
+  color: white;
+}
+
+/* Styles anchor elements in top nav to be centered */
+#container #topNav .navBar a {
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Styles anchor elements in the bottom nav to be centered */
+#container #bottomNav .navBar a {
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Resizes the fire image */
+#fire {
+  height: 150px;
+  width: 150px;
+}
+
+/* Resizes the truck image */
+#truck {
+  height: 150px;
+  width: 150px;
+}
+/* Styles middle section container to be centered and flexed */
+#container #middleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styles the text in the middle section to be more narrow */
+#container #middleSection p {
+  width: 25%;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+/* Styles the footer image container */
+#container #footerImageContainer {
+  height: 300px;
+  width: 100%;
+}
+
+/* Allows footer image to have 100% without changing aspect ratio */
+#footerImageContainer #footerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
