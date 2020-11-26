@@ -166,6 +166,11 @@
   font-size: 15px;
 }
 
+/* Styles the selected text between span element to be bold */
+span {
+  font-weight: bold;
+}
+
 /* Styles the footer image container */
 #container #footerImageContainer {
   height: 300px;
